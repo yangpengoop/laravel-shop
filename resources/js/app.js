@@ -27,6 +27,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//省市区三级联动组件
+require('./components/SelectDistrict');
+require('./components/UserAddressesCreateAndEdit');
+
 const app = new Vue({
     el: '#app',
 });
