@@ -32,6 +32,7 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     //商品相关  --需要相关权限
     Route::post('products/{product}/favorite', 'ProductsController@favor')->name('products.favor');
     Route::delete('products/{product}/favorite', 'ProductsController@disfavor')->name('products.disfavor');
+    Route::get('products/favorites', 'ProductsController@favorites')->name('products.favorites');
 });
 
 //商品--无需权限
