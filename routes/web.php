@@ -34,5 +34,4 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 
 //商品
 Route::get('products', 'ProductsController@index')->name('products.index');
-Route::get('products', 'ProductsController@index')->name('products.index');
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
